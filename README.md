@@ -1,1 +1,1 @@
-## Compiler Construction Lab tasks
+# Compiler Construction Lab tasks
