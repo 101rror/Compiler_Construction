@@ -1,0 +1,19 @@
+%option noyywrap
+%{
+	#include<stdio.h>
+%}
+
+%%
+(017|013)[0-9]{8} { printf("Grameenphone\n"); }
+(019|014)[0-9]{8} { printf("Banglalink\n"); }
+016[0-9]{8} { printf("Airtel\n"); }
+018[0-9]{8} { printf("Robi\n"); }
+[0-9]{11} { printf("Unknown Operator\n"); }
+. ;
+%%
+
+int main()
+{
+	yylex();
+	return 0;
+}
