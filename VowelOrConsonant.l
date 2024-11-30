@@ -1,0 +1,7 @@
+%option main
+
+%%
+[aAeEiIoOuU]    printf("Vowel: %s\n", yytext);
+[b-df-hj-np-tv-zB-DF-HJ-NP-TV-Z]   printf("Consonant: %s\n", yytext);
+. ;
+%%

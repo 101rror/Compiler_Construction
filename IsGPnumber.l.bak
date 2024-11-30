@@ -1,0 +1,7 @@
+%option main
+
+%%
+(+88017|017)[0-9]{8} { printf("GP phone number.\n"); }
+(+88013|013)[0-9]{8} { printf("GP phone number.\n"); }
+. ;
+%%
